@@ -2,7 +2,7 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { "runtime": "vercel-php@0.7.2" }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
@@ -10,26 +10,5 @@
     ],
     "public": true,
     "buildCommand": "vite build",
-    "outputDirectory": "public",
-    "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://test-aja-phi.vercel.app",
-        "APP_KEY": "base64:E/k9a2ffFoF++RRavIXzVuxuOmLX8iOudr08BzF8ynI=",
-        "APP_CONFIG_CACHE": "/tmp/config.php",
-        "APP_EVENTS_CACHE": "/tmp/events.php",
-        "APP_PACKAGES_CACHE": "/tmp/packages.php",
-        "APP_ROUTES_CACHE": "/tmp/routes.php",
-        "APP_SERVICES_CACHE": "/tmp/services.php",
-        "VIEW_COMPILED_PATH": "/tmp",
-        "CACHE_DRIVER": "array",
-        "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie",
-        "DB_CONNECTION": "mysql",
-        "DB_HOST": "127.0.0.1",
-        "DB_PORT": "3306",
-        "DB_DATABASE": "test",
-        "DB_USERNAME": "root",
-        "DB_PASSWORD": ""
-    }
+    "outputDirectory": "public"
 }
